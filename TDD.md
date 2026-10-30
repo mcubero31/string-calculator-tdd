@@ -18,3 +18,9 @@ Se implementa la suma mediante separación por comas y acumulación.
 
 Se sustituye el acumulador mutable por una secuencia de conversión y suma.
 `mvn test`: 2 pruebas, 0 fallos, 0 errores. BUILD SUCCESS, salida 0.
+
+## Iteración 2 — RED
+
+`mvn test`: 4 pruebas, 0 fallos de aserción, 2 errores `NumberFormatException`.
+Los dos casos de comas pasan; los dos nuevos fallan porque todavía se interpreta
+la cabecera como un número. BUILD FAILURE, salida 1.

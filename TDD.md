@@ -8,3 +8,8 @@ Preparación: `mvn test`, BUILD SUCCESS, 0 pruebas.
 
 `mvn test`: 2 pruebas, 2 fallos de aserción, 0 errores. Se esperaban 6 y 30;
 el código mínimo devolvió 0. BUILD FAILURE, salida 1.
+
+## Iteración 1 — GREEN
+
+`mvn test`: 2 pruebas, 0 fallos, 0 errores. BUILD SUCCESS, salida 0.
+Se implementa la suma mediante separación por comas y acumulación.

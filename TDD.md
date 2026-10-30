@@ -13,3 +13,8 @@ el código mínimo devolvió 0. BUILD FAILURE, salida 1.
 
 `mvn test`: 2 pruebas, 0 fallos, 0 errores. BUILD SUCCESS, salida 0.
 Se implementa la suma mediante separación por comas y acumulación.
+
+## Iteración 1 — REFACTOR
+
+Se sustituye el acumulador mutable por una secuencia de conversión y suma.
+`mvn test`: 2 pruebas, 0 fallos, 0 errores. BUILD SUCCESS, salida 0.

@@ -26,3 +26,6 @@ Ejecutar `mvn test`; para verificar desde cero, `mvn clean test`.
 RED añade pruebas y verifica su fallo por comportamiento pendiente. GREEN implementa
 lo necesario para pasarlas. REFACTOR mejora la estructura manteniendo las pruebas verdes.
 Cada fase se ejecuta y registra antes de su commit, precedida por un commit de preparación.
+
+Verificación final realizada: `mvn clean test`, **4 pruebas correctas**, sin fallos,
+errores ni pruebas omitidas. Los resultados de RED y de cada fase posterior están en `TDD.md`.

@@ -29,3 +29,15 @@ la cabecera como un número. BUILD FAILURE, salida 1.
 
 Se extraen la cabecera y el cuerpo y se usa `Pattern.quote` para el delimitador literal.
 `mvn test`: 4 pruebas, 0 fallos, 0 errores. BUILD SUCCESS, salida 0.
+
+## Iteración 2 — REFACTOR
+
+`add` interpreta la cabecera y delega en `sum`, que separa, convierte y suma.
+Se evita reasignar los parámetros y se comparte el cálculo entre ambos formatos.
+`mvn test`: 4 pruebas, 0 fallos, 0 errores. BUILD SUCCESS, salida 0.
+
+## Verificación final
+
+`mvn clean test`: 4 pruebas, 0 fallos, 0 errores, 0 omitidas. BUILD SUCCESS, salida 0.
+Entorno real: OpenJDK 27.0.1.0.3, Maven 3.9.8, JUnit 5.11.4, Surefire 3.5.2.
+Maven muestra avisos sobre APIs internas en Java 27; no impiden compilar ni ejecutar las pruebas.
